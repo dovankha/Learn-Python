@@ -7,11 +7,11 @@ for i in str:
 
 
 def encrypt(char):
-    return ((char + 3) % 26) # 3 là key
+    return ((char + 3) % 26)  # 3 là key
 
 
 def decrypt(char):
-    return ((encrypt(char) - 6) % 26) # 6 là 2*3 (key)
+    return ((encrypt(char) - 6) % 26)  # 6 là 2*3 (key)
 
 
 str1 = input("Enter plaintext: ")
@@ -22,7 +22,8 @@ for index in str1:
         if index == index_1:
             # in giá trị của mảng tại vị trí index
             print((arr[encrypt(arr.index(index))]), end="")
-            value.append(arr[encrypt(arr.index(index))]) #thêm vào mảng value kí tự vừa đc encrypt
+            # thêm vào mảng value kí tự vừa đc encrypt
+            value.append(arr[encrypt(arr.index(index))])
 
 
 # print("\n", value)
