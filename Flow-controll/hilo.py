@@ -2,11 +2,12 @@ low = 1
 high = 1000
 
 print("Please think of a number between {} and {}".format(low, high))
-print("Press ENTER to start")
+print("Press ENTER \
+to start")
 
 guesses = 1
 
-while True:
+while low != high:
     guess = low + (high - low) // 2
     high_low = input(
         "\tMy guess is {}. Should I guess higher or lower? Enter h or l, or c if my guess was correct.".format(guess)).casefold()
@@ -22,5 +23,8 @@ while True:
     else:
         print("Please enter h, l or c")
 
-    guesses = guesses + 1
- 
+    guesses += 1
+else:
+    #hoàn thành vòng while
+    print("You thought of the number {}".format(low))
+    print("I got it in {} guesses.".format(guesses))
