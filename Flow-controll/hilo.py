@@ -25,6 +25,6 @@ while low != high:
 
     guesses += 1
 else:
-    #hoàn thành vòng while
+    #điều kiện đúng của while
     print("You thought of the number {}".format(low))
     print("I got it in {} guesses.".format(guesses))

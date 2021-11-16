@@ -2,7 +2,7 @@ import random
 import os
 highest = 10
 answer = random.randint(1, highest)
-# print(answer)  # TODO: remove after testing
+print(answer)  # TODO: remove after testing
 guess = 0
 print("Please enter number between 1 and {}.".format(highest))
 while guess != answer:
