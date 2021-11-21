@@ -1,9 +1,9 @@
-# for i in range(1, 13):
-#     print("No. {0:2} squared is {1:3} and cubed is {2:10}". format(i, i**2, i**3))
+for i in range(1, 13):
+    print("No. {0:2} squared is {1:3} and cubed is {2:10}". format(i, i**2, i**3))
 
-# for i in range(1, 13):
-#     print("No. {0:<2} squared is {1:<3} and cubed is {2:^4}". format(
-#         i, i**2, i**3))
+for i in range(1, 13):
+    print("No. {0:>2} squared is {1:<3} and cubed is {2:^4}". format(
+        i, i**2, i**3))
 
 print(len("3.142857142857143"))
 print("1 Pi is approximately {0:12}".format(22/7))
