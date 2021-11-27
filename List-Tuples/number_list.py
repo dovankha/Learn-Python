@@ -12,3 +12,15 @@ print("len odd = ", len(odd))
 
 print()
 print("Count charactor in string: ", "mississippi".count("iss"))
+
+# Sorting list
+even.extend(odd)
+print(even)
+
+even.sort() # sắp tăng dân
+print("Tang dan - ascending", even)
+another_even = even
+print("Another_even: ", another_even)
+even.sort(reverse=True) # sắp giảm dần
+print("Giam dan - decrease", even)
+print("Another_even: ", another_even) # Suprise khi nó vẫn bị đổi
