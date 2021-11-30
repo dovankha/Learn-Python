@@ -24,3 +24,22 @@ print("Another_even: ", another_even)
 even.sort(reverse=True) # sắp giảm dần
 print("Giam dan - decrease", even)
 print("Another_even: ", another_even) # Suprise khi nó vẫn bị đổi
+
+# creating List
+print("==="*10)
+numbers = even + odd
+print(numbers)
+
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
+
+digits = list("123982872348")
+print(digits)
+digits.sort()
+
+#more_numbers = list(numbers)
+#more_numbers = numbers[:]
+more_numbers = numbers.copy()
+print(more_numbers)
+print(numbers is more_numbers)
+print(numbers == more_numbers)
