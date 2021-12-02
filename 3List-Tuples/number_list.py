@@ -13,10 +13,11 @@ print("len odd = ", len(odd))
 print()
 print("Count charactor in string: ", "mississippi".count("iss"))
 
-# Sorting list
+# cộng mảng odd vào even
 even.extend(odd)
 print(even)
 
+# Sorting list
 even.sort() # sắp tăng dân
 print("Tang dan - ascending", even)
 another_even = even
@@ -37,9 +38,12 @@ digits = list("123982872348")
 print(digits)
 digits.sort()
 
+
+#các cách tạo ra mảng mới
+
 #more_numbers = list(numbers)
 #more_numbers = numbers[:]
 more_numbers = numbers.copy()
 print(more_numbers)
-print(numbers is more_numbers)
-print(numbers == more_numbers)
+print(numbers is more_numbers) # so sánh này phải giống id thì mới đúng
+print(numbers == more_numbers) # so sánh các giá trị của mảng có bằng nhau không?

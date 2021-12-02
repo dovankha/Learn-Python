@@ -12,10 +12,9 @@ print(numbers)  # không còn bị thay đổi, vì dùng sorted()
 
 numbers.sort()
 print(numbers)
-print(sorted)
 
 # key = str.casefold : dùng để sắp xếp a-z
-# Nếu ko có key = str.casefold thì các chữ IN HOA sẽ được sắp trước
+# Nếu không có key = str.casefold thì các chữ IN HOA sẽ được sắp trước
 missing_letter = sorted(
     "The quik brown fox jumped over the lazy dog", key=str.casefold)
 print(missing_letter)

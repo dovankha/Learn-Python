@@ -13,4 +13,4 @@ print(seperators)
 
 value = "".join(char if char not in seperators else " " for char in number).split()
 print([int(val) for val in value])
-
+print("VALUE: ", value)

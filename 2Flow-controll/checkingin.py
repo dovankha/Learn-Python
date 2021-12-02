@@ -1,10 +1,10 @@
-# parrot = "Hello, My name is Vet"
-# letter = input("Enter a character: ")
-# print(letter.casefold()) #casefold: print lowercase
-# if letter in parrot:
-#     print('Yes. {} is in "{}"'.format(letter, parrot))
-# elif letter not in parrot:
-#     print("No. We don't find \"{}\"".format(letter))
+parrot = "Hello, My name is Vet"
+letter = input("Enter a character: ")
+print(letter.casefold()) #casefold: print lowercase
+if letter in parrot:
+    print('Yes. {} is in "{}"'.format(letter, parrot))
+elif letter not in parrot:
+    print("No. We don't find \"{}\"".format(letter))
 
 #exercise:
 name = input("Please enter your name: ")
