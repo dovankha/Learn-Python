@@ -16,16 +16,15 @@ for meal in menu:
         print("{} has a spam score of {}".format(meal, meal.count("spam")))
 
 # cách 1: xoá item "spam" ra khỏi list
-for meal in menu:
-    for index in range(len(meal) - 1, -1, -1):
-        if meal[index] == "spam":
-            del meal[index]
+# for meal in menu:
+#     for index in range(len(meal) - 1, -1, -1):
+#         if meal[index] == "spam":
+#             del meal[index]
 
-    print(meal)
+#     print(meal)
 
 # cách 2: in item không phải "spam"
 for meal in menu:
     for item in meal:
         if item == "spam":
-            print(item)
-    print()
+            print(item, end=' ')
