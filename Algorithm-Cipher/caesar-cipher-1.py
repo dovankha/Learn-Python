@@ -25,7 +25,6 @@ for index in str1:
             # thêm vào mảng value kí tự vừa đc encrypt
             value.append(arr[encrypt(arr.index(index))])
 
-
 # print("\n", value)
 print("\nPlaintext: ")
 
