@@ -1,8 +1,6 @@
-def banner(text):
-    screen_width = 80
+def banner(text, screen_width=80):
     if len(text) > screen_width - 4:
-        print("EEK!!")
-        print("THE TEXT IS SO LONG TO FIT IN THE SPECIFIED WIDTH")
+        raise ValueError("{} is large to fit {}.".format(text, screen_width))
     if text == "*":
         print("*" * screen_width)
     else:
@@ -13,6 +11,7 @@ def banner(text):
 banner("*")
 banner("Hello everyone, my name is Kha!")
 banner("I studying in PTITHCM. Major is Information Security.")
+banner(screen_width=60)
 banner("*")
 
 numbers = [1, 3, 2, 6, 4, 9, 8]
