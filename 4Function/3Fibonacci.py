@@ -1,4 +1,5 @@
-def fibonacci(n):
+def fibonacci(n: int) -> int:
+    """Return the 'n'th Fibonacci number, for possible 'n'."""
     if 0 <= n <= 1:
         return n
     n_minus1, n_minus2 = 1, 0
@@ -10,10 +11,11 @@ def fibonacci(n):
     return result
 
 
-def fibonacci1(n):
+def fibonacci1(n: int) -> int:
+    """Return the 'n'th Fibonacci number, for possible 'n'."""
     if 0 <= n <= 1:
         return n
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    return fibonacci1(n - 1) + fibonacci1(n - 2)
 
 
 for i in range(10):

@@ -1,4 +1,4 @@
-def multiple(n, m):
+def multiple(n: float, m: float) -> float:
     result = n * m
     return result
 
@@ -15,7 +15,7 @@ for val in range(1, 11):
     print("2 * ", val, " = ", two_times)
 
 
-def palindrome_sentence(sentence):
+def palindrome_sentence(sentence: str) -> bool:
     string = ""
     for char in sentence:
         if char.isalnum():

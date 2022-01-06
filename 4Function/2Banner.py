@@ -1,4 +1,4 @@
-def banner(text, screen_width=80):
+def banner(text: str = " ", screen_width: int = 80) -> None:
     if len(text) > screen_width - 4:
         raise ValueError("{} is large to fit {}.".format(text, screen_width))
     if text == "*":
