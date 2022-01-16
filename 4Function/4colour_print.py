@@ -25,9 +25,22 @@ def colour_function(text: str, effect: str) -> None:
     print(output_string)
 
 
+tool_name = '''
+
+ ██████╗  ██████╗██████╗ 
+██╔════╝ ██╔════╝██╔══██╗
+██║  ███╗██║     ██║  ██║
+██║   ██║██║     ██║  ██║
+╚██████╔╝╚██████╗██████╔╝
+ ╚═════╝  ╚═════╝╚═════╝ 
+                         
+                    
+'''
+
 colorama.init()
 colour_function("Meo...meo", RED)
 print("This text doesn't change color!")
 colour_function("gau...gau", CYAN)
 colour_function("Bye...bye!", MAGENTA)
+colour_function(tool_name, CYAN)
 colorama.deinit()
