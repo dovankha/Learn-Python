@@ -1,17 +1,18 @@
 import string
 
-str = string.ascii_lowercase
+
+Str = string.ascii_lowercase
 arr = []
-for i in str:
+for i in Str:
     arr.append(i)
 
 
 def encrypt(char):
-    return ((char + 3) % 26)  # 3 là key
+    return (char + 3) % 26  # 3 là key
 
 
 def decrypt(char):
-    return ((encrypt(char) - 6) % 26)  # 6 là 2*3 (key)
+    return (encrypt(char) - 6) % 26  # 6 là 2*3 (key)
 
 
 str1 = input("Enter plaintext: ")
