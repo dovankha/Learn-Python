@@ -1,0 +1,47 @@
+[NOTE READ WRITE FILE]
+
+Path file:
+- Windows:
+    1. open(r'C:\User\Admin\...')
+    2. open('C:\\User\Admin\...')
+- Linux:
+    1. open('home/user/Desktop/...')
+----------------------------------------------------------------------
+Có 3 loại file objects khác nhau:
+- Text files:
+    1. open('file_name.txt')
+    2. open('file_name.txt', 'r')
+    3. open('file_name.txt', 'w')
+    => return a TextIOWrapper file objects.
+- Buffered binary files
+    1. open('file_name.txt', 'rb')
+    2. open('file_name.txt', 'wb')
+    => return a BufferdWriter file objects.
+- Raw binary files
+    1. open('file_name.txt', 'rb', buffering=0)
+    => return a FileIO file objects.
+----------------------------------------------------------------------
+Lưu ý nhớ đóng file sau khi thực thi:
+- Cách 1:
+    Dùng try - finally:
+    *** source code:
+    file = open('home/user/...')
+    try:
+        # code processing
+    finally:
+        file.close()
+    ***
+- Cách 2:
+    Dùng with - as:
+    *** source code:
+    with open('home/user/...') as file:
+    ***
+----------------------------------------------------------------------
+Các methods khi read file:
+- read(int): đọc bình thường, tham số: đọc tới vị trí của tham số sẽ dừng
+- readline(int): đọc từng dòng, tham số: đọc tới vị trí của tham số sẽ dừng
+- readlines(size=-1): đọc một object, sẽ trả về list object
+----------------------------------------------------------------------
+Các methods khi write file:
+- write(string): ghi chuỗi vào trong file
+- writelines(seq): ghi liên tiếp vào trong file. Không có line endings được thêm vào mỗi sequence item.
