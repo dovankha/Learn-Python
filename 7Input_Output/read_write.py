@@ -25,3 +25,4 @@ with open(r'D:\Coding\Python\7Input_Output\dog_breeds.txt') as reader:
     while line != '': # The EOF char is an empty string
         print(line, end='')
         line = reader.readline()
+        

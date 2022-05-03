@@ -1,0 +1,16 @@
+- Function you should know:
+1. sort()
+2. type() list = ['a', 1, 3, 'b']. type(list) => list
+3. append()
+4. extend()
+5. index()
+6. max()
+7. min()
+8. len()
+9. clear()
+10. insert()
+11. count()
+12. pop()
+13. remove()
+14. reverse()
+15. copy()
